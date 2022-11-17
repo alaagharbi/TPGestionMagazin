@@ -32,13 +32,13 @@ public class ClientRestController {
 
 
     @GetMapping("/retrieveClient/{id}")
-    public Client retrieveClient(@PathVariable(value="id") Integer id) {
+    public Client retrieveClient(@PathVariable(value="id") long id) {
         return iClientService.retrieveClient(id);
 
     }
 
     @DeleteMapping("/removeClient/{id}")
-    public void removeClient(@PathVariable(value ="id") Integer id) {
+    public void removeClient(@PathVariable(value ="id") long id) {
         iClientService.removeClient(id);
     }
 
