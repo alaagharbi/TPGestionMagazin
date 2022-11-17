@@ -1,0 +1,13 @@
+package com.aggroup.tpgestionmagazin;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class TpGestionMagazinApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(TpGestionMagazinApplication.class, args);
+    }
+
+}
