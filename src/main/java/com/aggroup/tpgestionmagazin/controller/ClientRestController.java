@@ -39,7 +39,7 @@ public class ClientRestController {
 
     @DeleteMapping("/removeClient/{id}")
     public void removeClient(@PathVariable(value ="id") long id) {
-        iClientService.removeClient(id);
+        iClientService.deleteClient(id);
     }
 
 }

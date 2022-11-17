@@ -36,8 +36,4 @@ public class StockRestController {
 
     }
 
-    @DeleteMapping("/removeStock/{id}")
-    public void removeStock(@PathVariable(value ="id") long id) {
-        iStockService.removeStock(id);
-    }
 }

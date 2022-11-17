@@ -14,18 +14,22 @@ import java.util.List;
 @Entity
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
 public class Facture {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long idFacture ;
-    private float montantRemise ;
+    private Long idFacture;
+    private float montantRemise;
     private float montantFacture;
+
+    @Temporal(TemporalType.DATE)
     private Date dateFacture;
-    private boolean active;
-    @OneToMany(mappedBy = "facture")
+
+    private Boolean active;
+
+    @OneToMany (mappedBy = "facture")
     private List<DetailFacture> detailFactures;
+
     @ManyToOne
     private Client client;
 }

@@ -7,11 +7,9 @@ import java.util.List;
 public interface IStockService {
     List<Stock> retrieveAllStocks();
 
-    Stock addStock(Stock ce);
+    Stock addStock(Stock s);
 
-    Stock updateStock(Stock ce);
+    Stock updateStock(Stock u);
 
-    Stock retrieveStock(long idStock);
-
-    void removeStock(long idStock);
+    Stock retrieveStock(Long id);
 }
